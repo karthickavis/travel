@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+   --blue:#2b71e0;
+    --glass: rgba(255,255,255,.3);
+    --liteblue: #6696e4;
+}
+nav{
+    width: 80%;
+    /* border: 1px solid; */
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: baseline; */
+    padding: .5rem;
+    position: fixed;
+    top: 10px;
+    z-index: 2;
+    /* background-color: #2b71e0; */
+    background-color: var(--liteblue);
+    margin-left: 10%;
+
+    
+    }
+    nav i{
+      color: white;
+    }
+    .logo{
+        display: flex;
+        gap: 5px;
+        /* border: 1px solid; */
+    }
+    .logo h2{
+        padding-top: .2rem;
+        background-image: url(https://tse2.mm.bing.net/th?id=OIP.pdCDV1hyPYH2Io_Zdj2hpwHaEK&pid=Api&P=0&h=180);
+     color: transparent;
+     background-clip: text;
+     -webkit-background-clip: text;
+    }
+    .subnav{
+       
+        padding-top: .5rem;
+        margin-right: 20px;
+        
+        
+    }
+    .subnav a{
+        text-decoration: none; 
+        padding: .5rem;
+       color: white;
+    }
+    .subnav a:hover{
+        background-color: var(--blue) ;
+    }
+    .menuicon{
+        display: none!important;
+    }
+     nav input{
+        display: none;
+    }
+    main img{
+        height: 100vh;
+        width:100%;
+        /* background-image: url(https://www.ampagency.com/hs-fs/hubfs/flash/hero-images/desktop--2x/travel_hero-2x.jpg?width=11520&height=6480&name=travel_hero-2x.jpg); */
+        background-position: center;
+        background-size: cover;
+        animation: back 10s linear infinite;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        position: relative;
+        
+       
+    }
+    .maintag{
+   
+    padding: .6rem;
+    position: absolute;
+    top: 45%;
+    /* border: 1px solid;
+    background-color: #222022; */
+    left: 22%;
+    
+   
+    }
+    .maintag h1{
+        color: white;
+        padding: .3rem;
+        word-spacing: 5px;  
+    }
+    .ticket{
+        width: 100%;
+        padding: .8rem;
+        display: flex;
+        gap: 10px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+       
+       
+
+    }
+    .ticket #booking{
+      border-radius: 20px;
+      box-shadow: 2px 2px 5px;
+        padding: 1rem;
+        text-align: center;
+    }
+    .ticket #booking img{
+        padding-bottom: .4rem;
+    }
+   
+    .ticket a{
+        padding-top: .6rem;
+      color: black;
+      text-decoration: none;
+    }
+    .ticket #booking:hover{
+        background-color: #2b71e0;
+        cursor: pointer;
+        color: white;
+    }
+    
+  #flightticket{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://s-i.huffpost.com/gen/1871544/images/o-TRAVELING-facebook.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+
+
+
+
+  }
+  #flightticket .booker,#train .booker,#bus .booker,#hotel .booker{
+    display: flex;
+    border-radius: 20px;
+    position: absolute;
+    top: 15%;
+    /* left: 35%; */
+    width: 100%;
+    justify-content: center;
+    color: white;
+    /* background-color: rgba(255,255,255,.2); */
+    padding: .5rem;
+  }
+  #flightticket .booker h2,#train .booker h2,#bus .booker h2,#hotel .booker h2{
+    padding: 1rem;
+  }
+  #flightticket  .btn,#bus .btn,#train .btn,#hotel .btn{
+margin-top: .5rem;
+  }
+  #flightticket  .btn button,#train .btn button,#bus .btn button,#hotel .btn button{
+    padding: .4rem;
+    border-radius: 20px;
+    background-color: #2b71e0;
+    border: 1px solid #8ab1f0;
+    color: white;
+  }
+  #flightticket .book,#train .book,#bus .book,#hotel .book{
+    width: 90%;
+    background-color: white;
+   
+    margin-left: 5%;
+    padding: .6rem;
+    display: flex;
+   gap: 10px;
+   justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 40%;
+    border-radius: 20px;
+   
+   
+
+  }
+  #flightticket .book .hii,#train .book .hii,#bus .book .hii,#hotel .book .hii{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+  }
+  #flightticket .book label,#train .book label,#bus .book label,#hotel  .book label{
+  padding: .3rem 0;
+  /* color: white; */
+  
+  } 
+  #flightticket .book ::placeholder,#train .book ::placeholder,#bus .book ::placeholder,#hotel .book ::placeholder{
+    color: black;
+  }
+   #flightticket .book input, #flightticket .book select,#train .book input, #train .book select,#bus .book input, #bus .book select,#hotel .book input,#hotel .book select{
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid;
+   padding: .3rem 0;
+   outline: none;
+   /* color: white; */
+   }
+       
+  #train{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp6510008.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+object-fit: cover;
+
+
+
+  }
+  #bus{
+    width: 100%;
+    height: 100vh;
+    background-image: url(http://getwallpapers.com/wallpaper/full/2/1/b/1503586-free-desktop-wallpaper-travel-1920x1080-for-xiaomi.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+  }
+  #hotel{
+    width: 100%;
+    height: 100vh;
+    background-image: url(http://www.pixelstalk.net/wp-content/uploads/2016/08/HD-free-travel-wallpapers.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+
+
+
+
+  }
+  
+
+    
+
+
+  
+
+
+
+
+
+    @media screen and (min-width:300px) and (max-width:1005px) {
+        .subnav{
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            top: 59px;
+            left: -1000px;
+            width: 100%;
+            height: 100vh;
+            background-color: var(--liteblue);
+            transition: all 2s; 
+            text-align: center;
+            gap: 10px;
+            /* margin-right: 20px; */
+        }
+        .menuicon{
+            display: unset!important;
+            font-size: 1.5rem;
+            padding-right: .5rem;
+            /* border: 1px solid; */
+            color: white;
+            
+        
+        }
+        label{
+            margin-top: 4px;
+        }
+        input:checked~.subnav {
+            left: 0px;
+        }
+        }
+        @media screen and (max-width: 390px) {
+
+            #flightticket .book .hii,#flightticket .book{
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+                top: 20%;
+            }
+            #train .book .hii,#train .book{
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+                top: 20%;
+            }
+            #bus .book .hii,#bus .book{
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+                top: 20%;
+            }
+            #hotel .book .hii,#hotel .book{
+              flex-direction: column;
+              text-align: center;
+              gap: 10px;
+              top: 20%;
+          }
+            #flightticket .booker,#train .booker,#bus .booker,#hotel .booker{
+                top: 0px;
+                left: 20px;
+            }
+           
+        }
+       

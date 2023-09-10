@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+   --blue:#2b71e0;
+    --glass: rgba(255,255,255,.3);
+    --liteblue: #6696e4;
+}
+nav{
+    width: 80%;
+    /* border: 1px solid; */
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: baseline; */
+    padding: .5rem;
+    position: fixed;
+    top: 10px;
+    z-index: 2;
+    /* background-color: #2b71e0; */
+    background-color: var(--liteblue);
+    margin-left: 10%;
+
+    
+    }
+    .logo{
+        display: flex;
+        gap: 5px;
+        /* border: 1px solid; */
+    }
+    .logo h2{
+        padding-top: .2rem;
+        background-image: url(https://tse2.mm.bing.net/th?id=OIP.pdCDV1hyPYH2Io_Zdj2hpwHaEK&pid=Api&P=0&h=180);
+     color: transparent;
+     background-clip: text;
+     -webkit-background-clip: text;
+    }
+    .subnav{
+       
+        padding-top: .5rem;
+        margin-right: 20px;
+        
+        
+    }
+    .subnav a{
+        text-decoration: none; 
+        padding: .5rem;
+       color: white;
+    }
+    .subnav a:hover{
+        background-color: var(--blue) ;
+    }
+    .menuicon{
+        display: none!important;
+    }
+     nav input{
+        display: none;
+     }
+     .background{
+        width: 100%;
+        height: 70vh;
+        background-color: var(--blue);
+        position: relative;
+        clip-path: polygon(50% 0%, 100% 0, 100% 60%, 51% 69%, 51% 69%, 0% 60%, 0 0);
+
+
+
+     }
+     .overdiv{
+width: 100%;
+display: flex;
+justify-content: center;
+padding: .5rem;
+position: absolute;
+top: 20%;
+     }
+     .small{
+/* border: 1px solid; */
+/* box-shadow: 2px 2px 5px; */
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+border-radius: 20px;
+width: 80%;
+padding: .5rem;
+background-color: white;
+
+
+     }
+     .firstbox h1{
+        padding: .5rem .5rem 0 .5rem;
+     }
+     .btn{
+        padding: 1rem .5rem;
+     }
+     .btn button{
+        font-size: 1rem;
+        padding: .5rem 1.5rem;
+        background-color: var(--liteblue);
+        color: white;
+        border: 1px solid var(--blue);
+        cursor: pointer;
+       
+     }
+     span{
+        padding: 1rem .5rem;
+        font-size: 1.2rem;
+        font-weight: bolder;
+     }
+     #empty{
+        height: 2px;
+        width: 90px;
+        background-color: var(--blue);
+        margin-left: 10px;
+     }
+     .secondbox p{
+        padding: 1rem 0;
+    word-spacing: 8px;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    /* text-align: justify; */
+    padding: .5rem;
+     }
+     .thirdbox p{
+padding: .5rem;
+font-size: 1.3rem;
+     }
+     .thirdbox h2{
+        padding: .5rem;
+     }
+     .ftbox{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        gap: 20px;
+        place-items: center;
+        padding: 1rem .3rem;
+
+     }
+     .ftbox div{
+        height: 200px;
+        width: 250px;
+       /* box-shadow: 2px 2px 5px; */
+       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 1rem;
+        text-align: center;
+        /* border: 4px solid var(--blue); */
+        /* border-radius: 20px 30px 40px 20px; */
+     }
+     .ftbox h3{
+        padding: .6rem 0;
+     }
+
+
+
+
+     @media screen and (min-width:300px) and (max-width:1005px) {
+        .subnav{
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            top: 59px;
+            left: -1000px;
+            width: 100%;
+            height: 100vh;
+            background-color: var(--liteblue);
+            transition: all 2s; 
+            text-align: center;
+            gap: 10px;
+            /* margin-right: 20px; */
+        }
+        .menuicon{
+            display: unset!important;
+            font-size: 1.5rem;
+            padding-right: .5rem;
+            /* border: 1px solid; */
+            color: white;
+            
+        
+        }
+        label{
+            margin-top: 4px;
+        }
+        input:checked~.subnav {
+            left: 0px;
+        }
+        }
+        @media screen and (max-width: 362px) {
+            .ftbox div{
+                width: 200px;
+            }
+            .small{
+                width: 90%;
+            }
+        }

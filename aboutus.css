@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue:#2b71e0;
+    --glass: rgba(255,255,255,.3);
+    --liteblue: #6696e4;
+}
+nav{
+    width: 80%;
+    /* border: 1px solid; */
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: baseline; */
+    padding: .5rem;
+    position: fixed;
+    top: 10px;
+    z-index: 2;
+    /* background-color: var(--silver); */
+    background-color: var(--liteblue);
+    margin-left: 10%;
+
+    
+    }
+    .logo{
+        display: flex;
+        gap: 5px;
+        /* border: 1px solid; */
+    }
+    .logo h2{
+        padding-top: .2rem;
+        background-image: url(https://tse2.mm.bing.net/th?id=OIP.pdCDV1hyPYH2Io_Zdj2hpwHaEK&pid=Api&P=0&h=180);
+     color: transparent;
+     background-clip: text;
+     -webkit-background-clip: text;
+    }
+    .subnav{
+       
+        padding-top: .5rem;
+        margin-right: 20px;
+        
+        
+    }
+    .subnav a{
+        text-decoration: none; 
+        padding: .5rem;
+       color: white;
+    }
+    .subnav a:hover{
+        background-color:var(--blue) ;
+    }
+    .menuicon{
+        display: none!important;
+    }
+     nav input{
+        display: none;
+    }
+    main{
+        height: 100vh;
+        width: 100%;
+        /* background-image: url(https://www.pngmart.com/files/17/Travel-Icon-PNG-Transparent-Image.png); */
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    main img{
+        height: 100vh;
+        width: 100%;
+    }
+    .aboutustag h1,.customertag h1{
+        text-align: center;
+        padding: 1rem;
+        /* background-image: url(https://tse2.mm.bing.net/th?id=OIP.pdCDV1hyPYH2Io_Zdj2hpwHaEK&pid=Api&P=0&h=180);
+   color: transparent;
+   background-clip: text;
+   -webkit-background-clip: text; */
+   color: var(--blue);
+   font-size: 3rem;
+    }
+    .aboutus{
+        /* background-color: var(--cloud); */
+    }
+    .aboutus div{
+        width: 100%;
+      
+        padding: 1rem;
+    }
+    .aboutus div h2{
+        text-align: center;
+        padding: .8rem;
+        
+    }
+    .aboutus div p{
+       letter-spacing: 1px;
+       word-spacing: 4px;
+        text-align: center;
+       
+    }
+    .customerrating{
+        width: 100%;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 15px;
+        /* background-color: var(--cloud); */
+        flex-wrap: wrap;
+       
+    }
+    .customerrating .box{
+        height: 400px;
+        width: 300px;
+       
+        position: relative;
+        cursor: pointer;
+        /* box-shadow: 3px 3px 5px; */
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        overflow: hidden;
+       
+        
+    }
+    /* .customerrating .box:hover{
+        transform: perspective(800px) rotateY(0deg);
+    } */
+    .customerrating .box img{
+        height: 400px;
+        width: inherit;
+        opacity: .7;
+        object-fit: cover;
+        /* border-radius: 40px 20px 50px; */
+    }
+    .customerrating .box img:hover{
+        transform: scale(1.3);
+       
+    }
+    .pos .star i{
+        color: yellow;
+        
+    }
+    .pos .star{
+        text-align: center;
+        padding: .3rem;
+    }
+    .pos{
+        position: absolute;
+        top: 170px;
+        padding: 1rem;
+    }
+    .pos h3{
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .pos p{
+        text-align: justify;
+        
+    }
+
+
+
+
+
+
+    @media screen and (min-width:300px) and (max-width:1005px) {
+        .subnav{
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            top: 59px;
+            left: -1000px;
+            width: 100%;
+            height: 100vh;
+            background-color: var(--liteblue);
+            transition: all 2s; 
+            text-align: center;
+            gap: 10px;
+            /* margin-right: 20px; */
+        }
+        .menuicon{
+            display: unset!important;
+            font-size: 1.5rem;
+            padding-right: .5rem;
+            color: white;
+            /* border: 1px solid; */
+            
+        
+        }
+        label{
+            margin-top: 4px;
+        }
+        input:checked~.subnav {
+            left: 0px;
+        }
+        }
+        @media screen and (max-width:450px) {
+            .aboutustag h1,.customertag h1{
+                font-size: 2rem;
+            }
+        }
+        @media screen and (max-width:668px) {
+            .customerrating .box{
+                width: 100%;
+            }
+        }

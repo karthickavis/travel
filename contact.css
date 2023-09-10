@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+   --blue:#2b71e0;
+    --glass: rgba(255,255,255,.3);
+    --liteblue: #6696e4;
+}
+body{
+    /* background-color: var(--blue); */
+}
+nav{
+    width: 80%;
+    /* border: 1px solid; */
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: baseline; */
+    padding: .5rem;
+    position: fixed;
+    top: 10px;
+    z-index: 2;
+    /* background-color: #2b71e0; */
+    background-color: var(--liteblue);
+    margin-left: 10%;
+
+    
+    }
+    .logo{
+        display: flex;
+        gap: 5px;
+        /* border: 1px solid; */
+    }
+    .logo h2{
+        padding-top: .2rem;
+        background-image: url(https://tse2.mm.bing.net/th?id=OIP.pdCDV1hyPYH2Io_Zdj2hpwHaEK&pid=Api&P=0&h=180);
+     color: transparent;
+     background-clip: text;
+     -webkit-background-clip: text;
+    }
+    .subnav{
+       
+        padding-top: .5rem;
+        margin-right: 20px;
+        
+        
+    }
+    .subnav a{
+        text-decoration: none; 
+        padding: .5rem;
+       color: white;
+    }
+    .subnav a:hover{
+        background-color: var(--blue) ;
+    }
+    .menuicon{
+        display: none!important;
+    }
+     nav input{
+        display: none;
+    }
+    .top{
+        
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+    .top h1{
+        color: var(--blue);
+        font-size: 2.5rem;
+
+    }
+    .card{
+        width: 100%;
+        padding: 1rem;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: center;
+        
+    }
+    .card h2{
+        text-align: center;
+        padding: .4rem;
+    }
+   
+    .anothercard{
+       background-image: linear-gradient(rgb(159, 159, 230),tomato);
+    
+        /* border: 1px solid; */
+         /* height: 400px; */
+        width: 100vw;
+    }
+     .anothercard .firstline,.secondline,.thirdline{
+        display: flex;
+        gap: 10px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 1rem;
+     }
+     label{
+        font-size: 1.4rem;
+       
+     }
+     input{
+        font-size: 1.2rem;
+        padding: .4rem .7rem;
+       
+        border: unset;
+        outline: none;
+        border-radius: 10px;
+        background: none;
+     }
+     .icon{
+        /* border: 1px solid; */
+        padding: .2rem .4rem;
+        border-radius: 20px;
+        background-color: white;
+     }
+     .btn{
+        text-align: center;
+        padding: .5rem;
+     }
+     .btn button{
+        font-size: 1.2rem;
+        padding: .5rem 2rem;
+        border-radius: 20px 25px;
+    color: white;
+    background-color: var(--liteblue);
+   
+    border: 1px solid var(--blue);
+    cursor: pointer;
+     }
+     button:hover{
+        background-color: var(--blue);
+     }
+     i{
+        font-size: 1.3rem;
+        padding: .3rem;
+     }
+
+  .footer{
+    width: 100%;
+    padding: .7rem;
+    
+    background-color: var(--blue);
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 20px;
+  }
+  iframe{
+    height: 300px;
+    width: 300px;
+    padding: .4rem;
+  }
+  .empty{
+    height: 320px;
+    width: 2px;
+    background-color: white;
+    margin-top: 15px;
+  }
+  .address h2{
+    color: yellow;
+    padding: .4rem;
+  }
+  .map h3{
+    font-size: 1.7rem;
+    color: yellow;
+    padding: .4rem;
+    text-align: center;
+  }
+  .address{
+    width: 300px;
+    padding: .7rem;
+    /* border: 1px solid; */
+    
+  }
+  p{
+    /* color: white; */
+    padding: .4rem;
+    color: white;
+    line-height: 25px;
+    word-spacing: 2px;
+    font-size: 1.2rem;
+  }
+  span{
+color: white;
+    font-size: 1.2rem;
+  }
+  h4{
+    padding: .4rem ;
+    color: yellow;
+    font-size: 1.2rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+    
+    @media screen and (min-width:300px) and (max-width:1005px) {
+        .subnav{
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            top: 59px;
+            left: -1000px;
+            width: 100%;
+            height: 100vh;
+            background-color: var(--liteblue);
+            transition: all 2s; 
+            text-align: center;
+            gap: 10px;
+            /* margin-right: 20px; */
+        }
+        .menuicon{
+            display: unset!important;
+            font-size: 1.5rem;
+            padding-right: .5rem;
+            /* border: 1px solid; */
+            color: white;
+            
+        
+        }
+        label{
+            margin-top: 4px;
+        }
+        input:checked~.subnav {
+            left: 0px;
+        }
+    }
+ @media screen and (min-width:300px) and (max-width:400px) {
+    .anothercard .firstline,.secondline,.thirdline{
+       
+        padding: .5rem;
+     }
+     .card{
+        padding: .1rem;
+     }
+     .icon{
+        padding: .2rem;
+     }
+     input{
+        padding: 0 .3rem;
+     }
+     i{
+        font-size: 1rem;
+     }
+ }
+ @media screen and (max-width:665px) {
+    .footer{
+        flex-direction: column;
+    }
+    .empty{
+        width: 100%;
+        height: 2px;
+    }
+    .map{
+        width: 100%;
+    }
+    iframe{
+        width: 100%; 
+    }
+    .address{
+        width: 100%;
+    }
+ }
